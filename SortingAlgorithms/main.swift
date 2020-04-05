@@ -22,5 +22,6 @@ let sortedC = MergeSort.sorting(sequence: ints)
 
 print(sortedA == sortedB && sortedB == sortedC)
 
+
 print("end")
 

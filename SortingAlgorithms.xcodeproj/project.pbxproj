@@ -14,8 +14,24 @@
 		BF1381C224373522003D69FE /* BubbleSort.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF1381C124373522003D69FE /* BubbleSort.swift */; };
 		BF1381C524373574003D69FE /* RandomAccessCollection.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF1381C424373574003D69FE /* RandomAccessCollection.swift */; };
 		BF1381C7243735A3003D69FE /* RandomCollection.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF1381C6243735A3003D69FE /* RandomCollection.swift */; };
+		BF1381CF24373854003D69FE /* SortingAlgorithmCoreTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF1381CE24373854003D69FE /* SortingAlgorithmCoreTests.swift */; };
+		BF1381D124373854003D69FE /* SortingAlgorithmCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BF1381B3243734AC003D69FE /* SortingAlgorithmCore.framework */; };
+		BF1381D824373892003D69FE /* BubbleSortTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF1381D724373892003D69FE /* BubbleSortTests.swift */; };
+		BF1381DA24373A21003D69FE /* QuickSortTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF1381D924373A21003D69FE /* QuickSortTests.swift */; };
+		BF1381DC24373A51003D69FE /* MergeSortTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF1381DB24373A51003D69FE /* MergeSortTests.swift */; };
+		BF1381DE24373B21003D69FE /* CustomSequence.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF1381DD24373B21003D69FE /* CustomSequence.swift */; };
 		BF4B7080242E659300F9A675 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF4B707F242E659300F9A675 /* main.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		BF1381D224373854003D69FE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BF4B7074242E659300F9A675 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BF1381B2243734AC003D69FE;
+			remoteInfo = SortingAlgorithmCore;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
 		BF4B707A242E659300F9A675 /* CopyFiles */ = {
@@ -39,6 +55,13 @@
 		BF1381C124373522003D69FE /* BubbleSort.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BubbleSort.swift; sourceTree = "<group>"; };
 		BF1381C424373574003D69FE /* RandomAccessCollection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RandomAccessCollection.swift; sourceTree = "<group>"; };
 		BF1381C6243735A3003D69FE /* RandomCollection.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RandomCollection.swift; sourceTree = "<group>"; };
+		BF1381CC24373854003D69FE /* SortingAlgorithmCoreTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SortingAlgorithmCoreTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		BF1381CE24373854003D69FE /* SortingAlgorithmCoreTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SortingAlgorithmCoreTests.swift; sourceTree = "<group>"; };
+		BF1381D024373854003D69FE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BF1381D724373892003D69FE /* BubbleSortTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BubbleSortTests.swift; sourceTree = "<group>"; };
+		BF1381D924373A21003D69FE /* QuickSortTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuickSortTests.swift; sourceTree = "<group>"; };
+		BF1381DB24373A51003D69FE /* MergeSortTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MergeSortTests.swift; sourceTree = "<group>"; };
+		BF1381DD24373B21003D69FE /* CustomSequence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomSequence.swift; sourceTree = "<group>"; };
 		BF4B707C242E659300F9A675 /* SortingAlgorithms */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = SortingAlgorithms; sourceTree = BUILT_PRODUCTS_DIR; };
 		BF4B707F242E659300F9A675 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -48,6 +71,14 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BF1381C924373854003D69FE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BF1381D124373854003D69FE /* SortingAlgorithmCore.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -71,6 +102,7 @@
 				BF1381BB243734C9003D69FE /* QuickSort.swift */,
 				BF1381BD243734E8003D69FE /* MergeSort.swift */,
 				BF1381C124373522003D69FE /* BubbleSort.swift */,
+				BF1381DD24373B21003D69FE /* CustomSequence.swift */,
 			);
 			path = SortingAlgorithmCore;
 			sourceTree = "<group>";
@@ -84,11 +116,24 @@
 			path = FoundationExtensions;
 			sourceTree = "<group>";
 		};
+		BF1381CD24373854003D69FE /* SortingAlgorithmCoreTests */ = {
+			isa = PBXGroup;
+			children = (
+				BF1381DB24373A51003D69FE /* MergeSortTests.swift */,
+				BF1381D924373A21003D69FE /* QuickSortTests.swift */,
+				BF1381D724373892003D69FE /* BubbleSortTests.swift */,
+				BF1381CE24373854003D69FE /* SortingAlgorithmCoreTests.swift */,
+				BF1381D024373854003D69FE /* Info.plist */,
+			);
+			path = SortingAlgorithmCoreTests;
+			sourceTree = "<group>";
+		};
 		BF4B7073242E659300F9A675 = {
 			isa = PBXGroup;
 			children = (
 				BF4B707E242E659300F9A675 /* SortingAlgorithms */,
 				BF1381B4243734AC003D69FE /* SortingAlgorithmCore */,
+				BF1381CD24373854003D69FE /* SortingAlgorithmCoreTests */,
 				BF4B707D242E659300F9A675 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -98,6 +143,7 @@
 			children = (
 				BF4B707C242E659300F9A675 /* SortingAlgorithms */,
 				BF1381B3243734AC003D69FE /* SortingAlgorithmCore.framework */,
+				BF1381CC24373854003D69FE /* SortingAlgorithmCoreTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -142,6 +188,24 @@
 			productReference = BF1381B3243734AC003D69FE /* SortingAlgorithmCore.framework */;
 			productType = "com.apple.product-type.framework";
 		};
+		BF1381CB24373854003D69FE /* SortingAlgorithmCoreTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BF1381D424373854003D69FE /* Build configuration list for PBXNativeTarget "SortingAlgorithmCoreTests" */;
+			buildPhases = (
+				BF1381C824373854003D69FE /* Sources */,
+				BF1381C924373854003D69FE /* Frameworks */,
+				BF1381CA24373854003D69FE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				BF1381D324373854003D69FE /* PBXTargetDependency */,
+			);
+			name = SortingAlgorithmCoreTests;
+			productName = SortingAlgorithmCoreTests;
+			productReference = BF1381CC24373854003D69FE /* SortingAlgorithmCoreTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 		BF4B707B242E659300F9A675 /* SortingAlgorithms */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = BF4B7083242E659300F9A675 /* Build configuration list for PBXNativeTarget "SortingAlgorithms" */;
@@ -173,6 +237,9 @@
 						CreatedOnToolsVersion = 11.3.1;
 						LastSwiftMigration = 1130;
 					};
+					BF1381CB24373854003D69FE = {
+						CreatedOnToolsVersion = 11.3.1;
+					};
 					BF4B707B242E659300F9A675 = {
 						CreatedOnToolsVersion = 11.3.1;
 					};
@@ -193,12 +260,20 @@
 			targets = (
 				BF4B707B242E659300F9A675 /* SortingAlgorithms */,
 				BF1381B2243734AC003D69FE /* SortingAlgorithmCore */,
+				BF1381CB24373854003D69FE /* SortingAlgorithmCoreTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
 		BF1381B1243734AC003D69FE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BF1381CA24373854003D69FE /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -218,6 +293,18 @@
 				BF1381C524373574003D69FE /* RandomAccessCollection.swift in Sources */,
 				BF1381C024373506003D69FE /* SortingAlgorithm.swift in Sources */,
 				BF1381C224373522003D69FE /* BubbleSort.swift in Sources */,
+				BF1381DE24373B21003D69FE /* CustomSequence.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BF1381C824373854003D69FE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BF1381CF24373854003D69FE /* SortingAlgorithmCoreTests.swift in Sources */,
+				BF1381D824373892003D69FE /* BubbleSortTests.swift in Sources */,
+				BF1381DC24373A51003D69FE /* MergeSortTests.swift in Sources */,
+				BF1381DA24373A21003D69FE /* QuickSortTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -230,6 +317,14 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		BF1381D324373854003D69FE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BF1381B2243734AC003D69FE /* SortingAlgorithmCore */;
+			targetProxy = BF1381D224373854003D69FE /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		BF1381B8243734AC003D69FE /* Debug */ = {
@@ -286,6 +381,42 @@
 				SWIFT_VERSION = 5.0;
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		BF1381D524373854003D69FE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = TF2DE2DGLA;
+				INFOPLIST_FILE = SortingAlgorithmCoreTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.nashe-krashe.playground.SortingAlgorithmCoreTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		BF1381D624373854003D69FE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = TF2DE2DGLA;
+				INFOPLIST_FILE = SortingAlgorithmCoreTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.nashe-krashe.playground.SortingAlgorithmCoreTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
 			};
 			name = Release;
 		};
@@ -432,6 +563,15 @@
 			buildConfigurations = (
 				BF1381B8243734AC003D69FE /* Debug */,
 				BF1381B9243734AC003D69FE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BF1381D424373854003D69FE /* Build configuration list for PBXNativeTarget "SortingAlgorithmCoreTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BF1381D524373854003D69FE /* Debug */,
+				BF1381D624373854003D69FE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

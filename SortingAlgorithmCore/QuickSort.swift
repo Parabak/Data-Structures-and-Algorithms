@@ -28,7 +28,7 @@ public struct QuickSort: SortingAlgorithm {
         let idxBeforeWall = copy.index(before: wall)
         let pivotIdx = copy.firstIndex(of: pivot)!
         swap(in: &copy, at: idxBeforeWall, with: pivotIdx)
-        
+            
         let l_buffer = copy[copy.startIndex..<idxBeforeWall]
         let r_buffer = copy[wall..<copy.endIndex]
         
