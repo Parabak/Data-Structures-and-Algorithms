@@ -44,4 +44,15 @@ class MergeSortTests: XCTestCase {
         
         XCTAssert(benchmark == output)
     }
+    
+    
+    func test_PerformanceExample() {
+    
+        self.measure {
+            let n = 10000
+            var ints = Array(repeating: 0, count: n)
+            ints.fillWithRandomElements(n: n, range: 0...500)
+            let _ = MergeSort.sorting(sequence: ints)
+        }
+    }
 }

@@ -9,8 +9,8 @@
 import Foundation
 
 
-//TODO: Unit tests: measurements for all sorting algorithms
 public typealias CustomCollection = RandomAccessCollection & MutableCollection
+
 
 public protocol SortingAlgorithm {
 

@@ -46,11 +46,13 @@ class QuickSortTests: XCTestCase {
     }
     
     
-    func testPerformanceExample() {
-        // This is an example of a performance test case.
+    func test_PerformanceExample() {
+        
         self.measure {
-            // Put the code you want to measure the time of here.
+            let n = 10000
+            var ints = Array(repeating: 0, count: n)
+            ints.fillWithRandomElements(n: n, range: 0...500)
+            _ = QuickSort.sorting(sequence: ints)
         }
     }
-
 }

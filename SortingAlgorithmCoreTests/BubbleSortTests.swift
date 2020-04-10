@@ -48,7 +48,7 @@ class BubbleSortTests: XCTestCase {
     }
 
     
-    func testPerformanceExample() {
+    func test_PerformanceExample() {
         // This is an example of a performance test case.
         self.measure {
             let n = 1000

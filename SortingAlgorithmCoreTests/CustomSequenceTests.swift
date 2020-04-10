@@ -20,7 +20,7 @@ class CustomSequenceTests: XCTestCase {
         // Put teardown code here. This method is called after the invocation of each test method in the class.
     }
 
-    func testExample() {
+    func test_RandomAccessible_NoException() {
 
         var t = CustomSequence<MiataModel>()
         let na = MiataModel(vinCode: "vin1", dateOfmanufacture: Date(), displacementVolume: 1800)
@@ -44,6 +44,7 @@ class CustomSequenceTests: XCTestCase {
         
         XCTAssert(a == b)
     }
+    
     
     func testDisplacementUnits() {
         
