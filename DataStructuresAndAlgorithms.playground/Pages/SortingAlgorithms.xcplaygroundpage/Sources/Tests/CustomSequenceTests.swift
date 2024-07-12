@@ -8,8 +8,6 @@
 
 import XCTest
 
-@testable import SortingAlgorithmCore
-
 class CustomSequenceTests: XCTestCase {
 
     override func setUp() {

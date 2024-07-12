@@ -5,7 +5,7 @@ Playground contains some data structures, algorithms, or algorithmic tasks.
 
 ## DataStructures
 
-- Trie :checkmark
+- Trie ✅
 - Graph
 - Red–black tree
 - Queue

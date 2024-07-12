@@ -1,3 +1,4 @@
+import Foundation
 import UIKit
 
 print("start")
@@ -12,5 +13,21 @@ let sortedC = MergeSort.sorting(sequence: ints)
 
 print(sortedA == sortedB && sortedB == sortedC)
 
+import XCTest
 
+class TestObserver: NSObject, XCTestObservation {
+    func testCase(_ testCase: XCTestCase,
+                  didFailWithDescription description: String,
+                  inFile filePath: String?,
+                  atLine lineNumber: Int) {
+        assertionFailure(description, line: UInt(lineNumber))
+    }
+}
+
+let testObserver = TestObserver()
+XCTestObservationCenter.shared.addTestObserver(testObserver)
+
+BubbleSortTests.defaultTestSuite.run()
+MergeSortTests.defaultTestSuite.run()
+QuickSortTests.defaultTestSuite.run()
 print("end")

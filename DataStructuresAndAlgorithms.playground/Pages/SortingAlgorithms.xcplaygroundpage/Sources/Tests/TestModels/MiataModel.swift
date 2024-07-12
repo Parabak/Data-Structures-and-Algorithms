@@ -9,13 +9,13 @@
 import Foundation
 
 
-struct MiataModel {
+public struct MiataModel: NullableObject, Equatable, Comparable {
 
     let vin: String
     let date: Date
     let displacement: Measurement<DisplacementUnit>
     
-    init(vinCode: String, dateOfmanufacture: Date, displacementVolume: Double) {
+    public init(vinCode: String, dateOfmanufacture: Date, displacementVolume: Double) {
         
         vin = vinCode
         date = dateOfmanufacture
@@ -24,7 +24,7 @@ struct MiataModel {
 }
 
 
-extension MiataModel: NullableObject {
+public extension MiataModel {
     
     static func dummyInstance() -> MiataModel {
         MiataModel(vinCode: "fakeOne", dateOfmanufacture: Date(), displacementVolume: 0.0)
@@ -32,7 +32,7 @@ extension MiataModel: NullableObject {
 }
 
 
-extension MiataModel: Equatable {
+public extension MiataModel {
     
     static func ==(lhs: MiataModel, rhs: MiataModel) -> Bool {
         return lhs.vin == rhs.vin
@@ -40,7 +40,7 @@ extension MiataModel: Equatable {
 }
 
 
-extension MiataModel: Comparable {
+public extension MiataModel {
     static func < (lhs: MiataModel, rhs: MiataModel) -> Bool {
         return lhs.displacement < rhs.displacement
     }

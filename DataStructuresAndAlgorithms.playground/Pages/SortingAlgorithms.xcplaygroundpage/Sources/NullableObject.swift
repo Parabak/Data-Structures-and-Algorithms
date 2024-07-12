@@ -9,7 +9,7 @@
 import Foundation
 
 
-protocol NullableObject {
+public protocol NullableObject {
     
     static func dummyInstance() -> Self
 }

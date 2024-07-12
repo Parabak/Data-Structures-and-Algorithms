@@ -8,17 +8,13 @@
 
 import XCTest
 
-@testable import SortingAlgorithmCore
+public class BubbleSortTests: XCTestCase {
 
-class BubbleSortTests: XCTestCase {
-
-    
-    
-    override func setUp() {
+    public override func setUp() {
         
     }
 
-    override func tearDown() {
+    public override func tearDown() {
         // Put teardown code here. This method is called after the invocation of each test method in the class.
     }
 

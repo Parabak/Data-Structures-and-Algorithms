@@ -8,23 +8,20 @@
 
 import Foundation
 
-import SortingAlgorithmCore
-
-
-struct CustomSequence<E>: CustomCollection where E: NullableObject {
+public struct CustomSequence<E>: CustomCollection where E: NullableObject {
  
-    typealias Element = E
+    public typealias Element = E
     
-    typealias Index = Int
+    public typealias Index = Int
     
-    typealias SubSequence = CustomSequence
+    public typealias SubSequence = CustomSequence
     
-    var startIndex: Int = 0
-    var endIndex: Int = 0
+    public var startIndex: Int = 0
+    public var endIndex: Int = 0
     
     private var storage = [E]()
-        
-    subscript(position: Int) -> E {
+
+    public subscript(position: Int) -> E {
         get {
             storage[position]
         }
@@ -44,9 +41,10 @@ struct CustomSequence<E>: CustomCollection where E: NullableObject {
     }
     
     
-    subscript(bounds: Range<Self.Index>) -> Self.SubSequence {
+    public subscript(bounds: Range<Self.Index>) -> Self.SubSequence {
         get {
-            return SubSequence(startIndex: bounds.startIndex, endIndex: bounds.endIndex, storage: storage)
+            
+            return Self.SubSequence(startIndex: bounds.startIndex, endIndex: bounds.endIndex, storage: storage)
         }
         set (newValue) {
             
@@ -69,7 +67,7 @@ struct CustomSequence<E>: CustomCollection where E: NullableObject {
 
 extension CustomSequence: Equatable where Element: Equatable {
     
-    static func == (lhs: CustomSequence<E>, rhs: CustomSequence<E>) -> Bool {
+    public static func == (lhs: CustomSequence<E>, rhs: CustomSequence<E>) -> Bool {
         
         if lhs.count != rhs.count {
             return false
@@ -87,7 +85,7 @@ extension CustomSequence: Equatable where Element: Equatable {
 }
 
 
-extension CustomSequence {
+public extension CustomSequence {
     
     static func fillWithMiatas(n: Int) -> CustomSequence<MiataModel> {
         
